@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me 📫</title>
+</head>
+
+<body>
+    <h1>Contact Me</h1>
+    <ul>
+        <li>Email</li>
+        <li>Social Media
+            <!-- Look, the closing </li> tag is not placed here! -->
+            <ul>
+                <li>Social Media first subitem</li>
+                <li>Social Media second subitem</li>
+                <li>Social Media third subitem</li>
+            </ul>
+            <!-- Here is the closing </li> tag -->
+        </li>
+        <li>Fictional Address</li>
+        <li>Fictional Phone Number</li>
+    </ul>
+    <hr>
+    <form action="mailto:dietrich.kist@data-sheriff.com" method="post" enctype="text/plain">
+        <label> Do you wnat to get in contact? </label><br>
+        <label for="your_name">Enter your name: </label><br>
+        <input type="text" name="your_name" value=""><br>
+        <label for="your_email">Enter your email: </label><br>
+        <input type="email" name="your_email" id="email" required><br>
+        <label for="empty"></label><br>
+        <textarea name="your_message" rows="10" cols="30"></textarea><br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
